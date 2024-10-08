@@ -1,4 +1,4 @@
-DESCRIPTION = "An image that includes EGT with its demo applications"
+DESCRIPTION = "An image that includes EGT"
 LICENSE = "MIT"
 PR = "r0"
 
@@ -71,7 +71,6 @@ IMAGE_INSTALL += "\
 	ffmpeg \
 	\
 	liberation-fonts \
-	mchp-egt-demo-init \
 	hostapd \
 	9bit \
 	rng-tools \
@@ -83,7 +82,7 @@ IMAGE_INSTALL += "\
 	phytool \
 	tcpdump \
 	kea \
-        ${@oe.utils.conditional('SITEINFO_ENDIANNESS', 'le', 'libegt egt-launcher egt-samples egt-samples-contribution egt-media egt-thermostat egt-benchmark', '', d)} \
+        ${@oe.utils.conditional('SITEINFO_ENDIANNESS', 'le', 'libegt', '', d)} \
 	noto-fonts \
 	lohit-fonts \
 	rsync \
@@ -95,6 +94,7 @@ IMAGE_INSTALL += "\
 	ltrace \
 	stress-ng \
 	systemd-analyze \
+	tzdata \
 "
 
 IMAGE_INSTALL:append:at91sam9m10g45 = " \
@@ -113,6 +113,8 @@ IMAGE_INSTALL:append:at91sam9x5 = " \
 	tslib tslib-conf tslib-tests tslib-calibrate "
 
 IMAGE_INSTALL:append:sam9x60 = " \
+	tslib tslib-conf tslib-tests tslib-calibrate \
+    rt-tests \
 	hostapd \
 	bonnie++ "
 

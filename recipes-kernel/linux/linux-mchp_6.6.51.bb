@@ -5,8 +5,8 @@ PV = "6.6+git${SRCPV}"
 
 LINUX_VERSION="6.6"
 
-KBRANCH = "linux-6.6-mchp"
-SRC_URI = "git://github.com/linux4microchip/linux.git;protocol=https;branch=${KBRANCH} \
+KBRANCH = "topdata-202404-rt"
+SRC_URI = "git://engenharia@SRVAPS03:/home/engenharia/linuxtopdata.git;protocol=ssh;branch=${KBRANCH} \
            file://userinput.cfg"
 
 # kernel fragments
@@ -23,7 +23,7 @@ sama7g5ek-optee-sd	  = " file://sama7g5ek-linux-optee.cfg \
 			      file://sama7g5ek/0002-ARM-dts-microchip-at91-sama7g5ek-use-scmi0_clock-ins.patch \
                               "
 
-SRCREV = "cacd2c7e3ce635a1ca6e78b8409fd209fe6dde27"
+SRCREV = "7688f9a05f345078dd40539fd118305658711810"
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 
 KERNEL_MODULE_AUTOLOAD:append:sama5d27-wlsom1-ek-sd = " wilc-sdio"

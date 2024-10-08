@@ -2,7 +2,7 @@
 
 SRC_URI:append = " file://envs/"
 
-ENV_FILENAME = "uboot.env"
+ENV_FILENAME = "u-boot-env.bin"
 ENV_FILEPATH = "${WORKDIR}/envs"
 
 do_compile:append() {
