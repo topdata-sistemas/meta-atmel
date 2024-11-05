@@ -1,8 +1,8 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-SRCREV = "16fbd46d245d634778b9df729e3909d6bfd9a79b"
+SRCREV = "8f645256efc0dc66bd5c118778b0b50c44469ae1"
 
-PV = "4.2.0+git${SRCPV}"
+PV = "4.4.0+git${SRCPV}"
 
 OPTEEMACHINE = "sam"
 
