@@ -7,6 +7,7 @@ Subject: [PATCH] ARM: dts: microchip: at91-sama7g5ek: use scmi0_clock instead
 Use scmi0_clock instead of pmc clock in the sound node for optee
 machine.
 
+Upstream-Status: Inappropriate [only specific to optee configuration]
 Signed-off-by: Dharma Balasubiramani <dharma.b@microchip.com>
 ---
  arch/arm/boot/dts/microchip/at91-sama7g5ek.dts | 3 +--
