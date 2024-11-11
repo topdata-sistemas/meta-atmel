@@ -20,6 +20,7 @@ SRC_URI:append:sam9x60    = " file://at91_dt.cfg"
 SRC_URI:append:\
 sama7g5ek-optee-sd	  = " file://sama7g5ek-linux-optee.cfg \
                               file://sama7g5ek/0001-dts-include-optee-dtsi.patch \
+			      file://sama7g5ek/0002-ARM-dts-microchip-at91-sama7g5ek-use-scmi0_clock-ins.patch \
                               "
 
 SRCREV = "4b6e171642a4167dbbb572d5101681f0b2e75772"
