@@ -114,12 +114,5 @@ fi
 echo "6.############## Starting kea DHCP service ##############"
 keactrl start
 
-cd /root || exit 5
-./websocket &
-echo "Now, The device comes up as an Access Point(AP) and host a webpage to provision"
-echo "WiFi station interface"
-printf "\n"
 echo "Use a Phone/Laptop and connect to the '$AP_NAME' WiFi AP using '$AP_PSK'"
-echo "Using the web browser open http://192.168.1.1"
-echo "---------------------------------------------------"
 echo "---------------------------------------------------"
