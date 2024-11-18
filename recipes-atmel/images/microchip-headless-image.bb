@@ -50,6 +50,8 @@ IMAGE_INSTALL:append:sam9x75-curiosity = " wilc-demo-fs-overlay "
 IMAGE_INSTALL:append:sam9x75-curiosity-sd = " nginx wireless-kit-webpages \
 					      ble-bluez-hci-apps \
 					      video-capture-at91 \
+					      fswebcam libv4l v4l-utils media-ctl ffmpeg \
+					      video-capture-at91 \
 					      libcamera-mchp \
 					      wilc-demo-fs-overlay "
 
