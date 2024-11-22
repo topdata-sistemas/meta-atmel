@@ -11,7 +11,7 @@ COMPATIBLE_MACHINE = '(sama5d3-xplained|sama5d3-xplained-sd|at91sam9x5ek|at91sam
 SRC_URI = "git://engenharia@SRVAPS03:/home/engenharia/dt-overlay-mchp.git;protocol=ssh;branch=resistive"
 
 PV = "1.0+git${SRCPV}"
-SRCREV = "a851993bfbc7ffd0607a77bd71853c75b2ed50c9"
+SRCREV = "9d13b59109adb09997ee9bae39abd513c1fbb430"
 
 DEPENDS = "virtual/kernel u-boot-mkimage-native dtc-native"
 
