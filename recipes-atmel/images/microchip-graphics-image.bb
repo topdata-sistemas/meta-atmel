@@ -141,7 +141,10 @@ IMAGE_INSTALL:append:sama5d2 = " video-capture-at91 \
 IMAGE_INSTALL:append:sam9x60-curiosity = " wilc-demo-fs-overlay "
 IMAGE_INSTALL:append:sam9x60-curiosity-sd = " wilc-demo-fs-overlay "
 
-IMAGE_INSTALL:append:sam9x75-curiosity = " wilc-demo-fs-overlay "
+IMAGE_INSTALL:append:sam9x75-curiosity = " nginx wireless-kit-webpages \
+					   ble-bluez-hci-apps \
+					   libcamera-mchp \
+					   wilc-demo-fs-overlay "
 IMAGE_INSTALL:append:sam9x75-curiosity-sd = " nginx wireless-kit-webpages \
 					      ble-bluez-hci-apps \
 					      libcamera-mchp \
