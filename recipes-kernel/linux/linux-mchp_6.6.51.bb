@@ -6,7 +6,7 @@ PV = "6.6+git${SRCPV}"
 LINUX_VERSION="6.6"
 
 KBRANCH = "topdata-202404-rt"
-SRC_URI = "git://engenharia@SRVAPS03:/home/engenharia/linuxtopdata.git;protocol=ssh;branch=${KBRANCH} \
+SRC_URI = "git:///home/topdata/repos/linux-at91.git;protocol=file;branch=${KBRANCH} \
            file://userinput.cfg"
 
 # kernel fragments
