@@ -40,7 +40,6 @@ IMAGE_INSTALL += "\
 	iproute2 \
 	iptables \
 	bridge-utils \
-	can-utils \
 	python3-pyserial \
 	python3-smbus \
 	python3-ctypes \
@@ -48,7 +47,6 @@ IMAGE_INSTALL += "\
 	mpio \
 	gdb \
 	evtest \
-	mxt-app \
 	usbutils \
 	wget \
 	dpkg-start-stop \
@@ -95,6 +93,8 @@ IMAGE_INSTALL += "\
 	stress-ng \
 	systemd-analyze \
 	tzdata \
+	fb-test \
+	socat \
 "
 
 IMAGE_INSTALL:append:at91sam9m10g45 = " \

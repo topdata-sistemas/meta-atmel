@@ -8,10 +8,10 @@ inherit deploy
 
 COMPATIBLE_MACHINE = '(sama5d3-xplained|sama5d3-xplained-sd|at91sam9x5ek|at91sam9x5ek-sd|sama5d4-xplained|sama5d4-xplained-sd|sama5d2-xplained|sama5d2-xplained-sd|sama5d2-xplained-emmc|sama5d2-ptc-ek|sama5d2-ptc-ek-sd|sama5d27-som1-ek|sama5d27-som1-ek-sd|sama5d2-icp-sd|sam9x60ek|sam9x60ek-sd|sama5d27-wlsom1-ek-sd|sama5d29-curiosity-sd|sama7g5ek|sam9x60-curiosity|sam9x60-curiosity-sd|sam9x75-curiosity|sam9x75-curiosity-sd|sam9x75eb|sam9x75eb-sd)'
 
-SRC_URI = "git:///home/topdata/repos/dt-overlay-mchp.git;protocol=file;branch=resistive"
+SRC_URI = "git:///home/topdata/repos/dt-overlay-mchp.git;protocol=file;branch=topdata"
 
 PV = "1.0+git${SRCPV}"
-SRCREV = "9d13b59109adb09997ee9bae39abd513c1fbb430"
+SRCREV = "c79fbe0747b9b9952404be4f9a25797a2234e93f"
 
 DEPENDS = "virtual/kernel u-boot-mkimage-native dtc-native"
 
